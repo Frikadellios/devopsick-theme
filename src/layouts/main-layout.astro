@@ -1,0 +1,49 @@
+---
+import '@/styles/globals.css'
+import BaseHead from '@/components/BaseHead.astro'
+import CardMouseMoveScript from '../components/motion/CardMouseMoveScript'
+import TailwindIndicator from '@/components/tailwind-indicator.astro'
+import { cn } from '@/lib/utils'
+
+type Props = {
+  title: string
+  description?: string
+  lang: string
+  mainClass?: string
+  bodyClass?: string
+}
+
+import { SITE } from '@/const'
+import I18NHeader from '@/i18n/I18nHeader.astro'
+import { getLangFromUrl } from '@/i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+const { title, description, mainClass, bodyClass } = Astro.props as Props
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth bg-background text-foreground">
+  <head>
+    <BaseHead title={`${title} | ${SITE.TITLE[lang]}`} description={`${description} | ${SITE.DESCRIPTION[lang]}`} lang={lang} />
+    <I18NHeader />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script is:inline src="./assets/vendor/preline/preline.js"></script>
+  </head>
+  <body class={cn("flex flex-col min-h-screen", bodyClass)}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T7CDGRPZ"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
+        <main class={cn(mainClass)}>
+            <slot />
+            <TailwindIndicator />
+        </main>
+        <CardMouseMoveScript client:load />
+  </body>
+</html>
+
+<script src="../../node_modules/preline/preline.js"></script>
