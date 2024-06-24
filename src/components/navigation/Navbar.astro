@@ -3,7 +3,7 @@ import Container from '@/components/Container.astro'
 import { Astronav, MenuIcon, MenuItems } from 'astro-navbar'
 import Dropdown from './Dropdown.astro'
 import Links from './link.astro'
-import { PopoverLang } from "@/components/react/popover-lang";
+
 
 interface NavbarMenuItems {
   badge: boolean
@@ -167,17 +167,16 @@ const lang = getLangFromUrl(Astro.url)
                     }
                 </ul>
                 <div class="mt-3 flex items-center gap-4 lg:hidden">
-                  <PopoverLang client:load lang={lang} url={Astro.url} />
-                    <Links href="#" style="muted" block size="md">Log in</Link>
-                    <Links href="#" size="md" block>Sign up</Link>
+                    <Links href="#" style="muted" block size="md">Log in</Links>
+                    <Links href="#" size="md" block>Sign up</Links>
                 </div>
             </MenuItems>
         </Astronav>
         <div>
             <div class="hidden items-center gap-4 lg:flex">
-              <PopoverLang client:load lang={lang} url={Astro.url} />
+
                 <a href="#">Log in</a>
-                <Links href="#" size="md">Sign up</Link>
+                <Links href="#" size="md">Sign up</Links>
             </div>
         </div>
     </header>

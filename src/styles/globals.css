@@ -1,5 +1,5 @@
 @import "tailwindcss";
- 
+
 @theme {
   --foreground-rgb: oklch(98.3% 0.004 316.6);
   --background-start-rgb: 0, 0, 0;
@@ -237,15 +237,17 @@
       }
     }
 }
- 
 
-  * {
-    @apply border-border;
-  }
+
+.border-border {
+  border-color: var(--color-border, oklch(27.41% 0.005 286.03));
+}
 
   body {
     transition: background-color 0.5s ease;
-    @apply relative flex flex-col;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     font-synthesis-weight: none;
     text-rendering: optimizeLegibility;
     font-feature-settings: "rlig" 1, "calt" 1;
