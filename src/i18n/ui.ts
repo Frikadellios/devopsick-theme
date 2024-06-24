@@ -1,16 +1,16 @@
 export const languages = {
   en: {
     route: '/en/',
-    icon: 'en',
+    icon: 'en'
   },
   ru: {
     route: '/ru/',
-    icon: 'ru',
+    icon: 'ru'
   },
   uk: {
     route: '/uk/',
-    icon: 'uk',
-  },
+    icon: 'uk'
+  }
 }
 
 export const defaultLang = 'en'
@@ -67,7 +67,7 @@ export const ui = {
       'No equipment is necessary to train with me (I provide the necessary equipment), but it is a good idea to have your own equipment for hygiene and safety.',
     'toast-shop-description':
       'Explore my exclusive designs crafted specifically for sports enthusiasts.',
-    'toast-shop-cta': 'Shop',
+    'toast-shop-cta': 'Shop'
   },
   ru: {
     'homepage-title': 'My Homepage Medovyk',
@@ -120,7 +120,7 @@ export const ui = {
       'No equipment is necessary to train with me (I provide the necessary equipment), but it is a good idea to have your own equipment for hygiene and safety.',
     'toast-shop-description':
       'Explore my exclusive designs crafted specifically for sports enthusiasts.',
-    'toast-shop-cta': 'Shop',
+    'toast-shop-cta': 'Shop'
   },
   uk: {
     'homepage-title': 'My Homepage Medovyk',
@@ -173,6 +173,6 @@ export const ui = {
       'No equipment is necessary to train with me (I provide the necessary equipment), but it is a good idea to have your own equipment for hygiene and safety.',
     'toast-shop-description':
       'Explore my exclusive designs crafted specifically for sports enthusiasts.',
-    'toast-shop-cta': 'Shop',
-  },
+    'toast-shop-cta': 'Shop'
+  }
 }

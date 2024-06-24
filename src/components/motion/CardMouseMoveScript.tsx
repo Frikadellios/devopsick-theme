@@ -15,7 +15,7 @@ export default function CardMouseMoveScript() {
   useEffect(() => {
     console.log('hello')
     for (const card of document.querySelectorAll(
-      '.card',
+      '.card'
     ) as NodeListOf<HTMLDivElement>) {
       card.onmousemove = handleOnMouseMove
     }

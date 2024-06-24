@@ -22,7 +22,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.1.2",
+    "@astrojs/partytown": "^2.1.1",
     "@astrojs/react": "^3.6.0",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/ts-plugin": "^1.8.0",
     "@hookform/resolvers": "^3.6.0",
     "@nanostores/persistent": "^0.10.1",

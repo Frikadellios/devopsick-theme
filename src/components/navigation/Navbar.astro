@@ -4,7 +4,6 @@ import { Astronav, MenuIcon, MenuItems } from 'astro-navbar'
 import Dropdown from './Dropdown.astro'
 import Links from './link.astro'
 
-
 interface NavbarMenuItems {
   badge: boolean
   title: {
@@ -29,7 +28,7 @@ const menuitems: NavbarMenuItems[] = [
     title: {
       uk: 'Послуги',
       en: 'Services',
-      ru: 'Услуги',
+      ru: 'Услуги'
     },
     path: '#',
     children: [
@@ -37,81 +36,81 @@ const menuitems: NavbarMenuItems[] = [
         title: {
           uk: '/blog',
           en: '/blog',
-          ru: '/blog',
+          ru: '/blog'
         },
-        path: '/',
+        path: '/'
       },
       {
         title: {
           uk: '/blog',
           en: '/blog',
-          ru: '/blog',
+          ru: '/blog'
         },
-        path: '#',
+        path: '#'
       },
       {
         title: {
           uk: '/blog',
           en: '/blog',
-          ru: '/blog',
+          ru: '/blog'
         },
-        path: '#',
+        path: '#'
       },
       {
         title: {
           uk: '/blog',
           en: '/blog',
-          ru: '/blog',
+          ru: '/blog'
         },
-        path: '/404',
-      },
-    ],
+        path: '/404'
+      }
+    ]
   },
   {
     badge: false,
     title: {
       uk: '/blog',
       en: '/blog',
-      ru: '/blog',
+      ru: '/blog'
     },
-    path: '/pricing',
+    path: '/pricing'
   },
   {
     badge: false,
     title: {
       uk: '/blog',
       en: '/blog',
-      ru: '/blog',
+      ru: '/blog'
     },
-    path: '/about',
+    path: '/about'
   },
   {
     badge: false,
     title: {
       uk: '/blog',
       en: '/blog',
-      ru: '/blog',
+      ru: '/blog'
     },
-    path: '/blog',
+    path: '/blog'
   },
   {
     badge: false,
     title: {
       uk: 'blog',
       en: 'blog',
-      ru: 'blog',
+      ru: 'blog'
     },
-    path: '/contact',
+    path: '/contact'
   },
   {
     badge: false,
     title: {
       uk: '/blog',
       en: '/blog',
-      ru: '/blog',
+      ru: '/blog'
     },
-    path: 'https://astroship-pro.web3templates.com/',
-  },
+    path: 'https://astroship-pro.web3templates.com/'
+  }
 ]
 
 import { getLangFromUrl } from '@/i18n/utils'
@@ -128,7 +127,9 @@ const lang = getLangFromUrl(Astro.url)
                     >
                 </a>
                 <div class="block lg:hidden">
-                    <MenuIcon class="h-4 w-4 transition-colors font-medium duration-200 hover:text-yellow-400 flex items-center py-2 text-med-black lg:px-3" />
+                    <MenuIcon
+                        class="text-med-black flex h-4 w-4 items-center py-2 font-medium transition-colors duration-200 hover:text-yellow-400 lg:px-3"
+                    />
                 </div>
             </div>
             <MenuItems class="mt-2 hidden w-full lg:mt-0 lg:flex lg:w-auto">
@@ -151,7 +152,7 @@ const lang = getLangFromUrl(Astro.url)
                                     <li>
                                         <a
                                             href={item.path}
-                                            class="transition-colors font-medium duration-200 hover:text-med-yellow flex items-center py-2 text-med-black lg:px-3"
+                                            class="hover:text-med-yellow text-med-black flex items-center py-2 font-medium transition-colors duration-200 lg:px-3"
                                         >
                                             <span> {item.title[lang]}</span>
                                             {item.badge && (
@@ -174,7 +175,6 @@ const lang = getLangFromUrl(Astro.url)
         </Astronav>
         <div>
             <div class="hidden items-center gap-4 lg:flex">
-
                 <a href="#">Log in</a>
                 <Links href="#" size="md">Sign up</Links>
             </div>
@@ -247,10 +247,10 @@ const lang = getLangFromUrl(Astro.url)
                 button.addEventListener(
                     "click",
                     () => button.classList.toggle("toggled"),
-                    false,
+                    false
                 );
             }
         },
-        { once: false },
+        { once: false }
     );
 </script>

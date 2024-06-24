@@ -4,14 +4,14 @@ export const SITE: Site = {
   TITLE: {
     uk: 'Medovyk IT agency>',
     en: 'Medovyk IT agency',
-    ru: 'Medovyk IT agency',
+    ru: 'Medovyk IT agency'
   },
   DESCRIPTION: {
     uk: 'IT Agency',
     en: 'Astro Sphere',
-    ru: 'Astro Sphere',
+    ru: 'Astro Sphere'
   },
-  AUTHOR: 'Mark Horn',
+  AUTHOR: 'Mark Horn'
 }
 
 // Work Page
@@ -19,13 +19,13 @@ export const WORK: Page = {
   TITLE: {
     uk: 'Worked.',
     en: 'Work',
-    ru: 'Work',
+    ru: 'Work'
   },
   DESCRIPTION: {
     uk: 'Places I have worked.',
     en: 'Places I have worked.',
-    ru: 'Places I have worked.',
-  },
+    ru: 'Places I have worked.'
+  }
 }
 
 // Blog Page
@@ -33,13 +33,13 @@ export const BLOG: Page = {
   TITLE: {
     uk: 'Blog',
     en: 'Blog',
-    ru: 'Blog',
+    ru: 'Blog'
   },
   DESCRIPTION: {
     uk: 'Places I have worked.',
     en: 'Places I have worked.',
-    ru: 'Places I have worked.',
-  },
+    ru: 'Places I have worked.'
+  }
 }
 
 // Projects Page
@@ -47,13 +47,13 @@ export const PROJECTS: Page = {
   TITLE: {
     uk: 'Places I have worked.',
     en: 'Places I have worked.',
-    ru: 'Places I have worked.',
+    ru: 'Places I have worked.'
   },
   DESCRIPTION: {
     uk: 'Places I have worked.',
     en: 'Places I have worked.',
-    ru: 'Places I have worked.',
-  },
+    ru: 'Places I have worked.'
+  }
 }
 
 // Search Page
@@ -61,13 +61,13 @@ export const SEARCH: Page = {
   TITLE: {
     uk: 'Places I have worked.',
     en: 'Places I have worked.',
-    ru: 'Places I have worked.',
+    ru: 'Places I have worked.'
   },
   DESCRIPTION: {
     uk: 'Places I have worked.',
     en: 'Places I have worked.',
-    ru: 'Places I have worked.',
-  },
+    ru: 'Places I have worked.'
+  }
 }
 
 export const LINKS: Links = [
@@ -75,42 +75,42 @@ export const LINKS: Links = [
     TEXT: {
       uk: 'Home',
       en: 'Home',
-      ru: 'Home',
+      ru: 'Home'
     },
-    HREF: '/',
+    HREF: '/'
   },
   {
     TEXT: {
       uk: 'Services',
       en: 'Services',
-      ru: 'Services',
+      ru: 'Services'
     },
-    HREF: '/',
+    HREF: '/'
   },
   {
     TEXT: {
       uk: 'Work',
       en: 'Work',
-      ru: 'Work',
+      ru: 'Work'
     },
-    HREF: '/work',
+    HREF: '/work'
   },
   {
     TEXT: {
       uk: 'Blog',
       en: 'Blog',
-      ru: 'Blog',
+      ru: 'Blog'
     },
-    HREF: '/blog',
+    HREF: '/blog'
   },
   {
     TEXT: {
       uk: 'Projects',
       en: 'Projects',
-      ru: 'Projects',
+      ru: 'Projects'
     },
-    HREF: '/projects',
-  },
+    HREF: '/projects'
+  }
 ]
 
 export const SOCIALS: Socials = [
@@ -118,24 +118,24 @@ export const SOCIALS: Socials = [
     NAME: 'Email',
     ICON: 'email',
     TEXT: 'devopsick@pm.me',
-    HREF: 'mailto:devopsick@pm.me',
+    HREF: 'mailto:devopsick@pm.me'
   },
   {
     NAME: 'Github',
     ICON: 'github',
     TEXT: 'github',
-    HREF: 'https://github.com/',
+    HREF: 'https://github.com/'
   },
   {
     NAME: 'LinkedIn',
     ICON: 'linkedin',
     TEXT: 'linkedin',
-    HREF: 'https://www.linkedin.com/',
+    HREF: 'https://www.linkedin.com/'
   },
   {
     NAME: 'Twitter',
     ICON: 'twitter-x',
     TEXT: 'twitter',
-    HREF: 'https://twitter.com/',
-  },
+    HREF: 'https://twitter.com/'
+  }
 ]

@@ -1,5 +1,4 @@
 ---
-
 import { Icon } from '@/components/ui/icon'
 import { Marquee } from '@devnomic/marquee'
 import '@devnomic/marquee/dist/index.css'
@@ -13,56 +12,53 @@ interface sponsorsProps {
 const sponsors: sponsorsProps[] = [
   {
     icon: 'Crown',
-    name: 'Acmebrand',
+    name: 'Acmebrand'
   },
   {
     icon: 'Vegan',
-    name: 'Acmelogo',
+    name: 'Acmelogo'
   },
   {
     icon: 'Ghost',
-    name: 'Acmesponsor',
+    name: 'Acmesponsor'
   },
   {
     icon: 'Puzzle',
-    name: 'Acmeipsum',
+    name: 'Acmeipsum'
   },
   {
     icon: 'Squirrel',
-    name: 'Acme',
+    name: 'Acme'
   },
   {
     icon: 'Cookie',
-    name: 'Accmee',
+    name: 'Accmee'
   },
   {
     icon: 'Drama',
-    name: 'Acmetech',
-  },
+    name: 'Acmetech'
+  }
 ]
 ---
 
+<section id="sponsors" class="mx-auto max-w-[75%] pb-24 sm:pb-32">
+    <h2 class="mb-6 text-center text-lg md:text-xl">Our Platinum Sponsors</h2>
 
-    <section id="sponsors" class="max-w-[75%] mx-auto pb-24 sm:pb-32">
-      <h2 class="text-lg md:text-xl text-center mb-6">
-        Our Platinum Sponsors
-      </h2>
-
-      <div class="mx-auto">
+    <div class="mx-auto">
         <Marquee className="gap-[3rem]" fade innerClassName="gap-[3rem]">
-          {sponsors.map(({ icon, name }) => (
-            <div
-              class="flex items-center text-xl md:text-2xl font-medium"
-            >
-              <Icon
-                name={icon as keyof typeof icons}
-                size={32}
-                color="white"
-                className="mr-2"
-              />
-              {name}
-            </div>
-          ))}
+            {
+                sponsors.map(({ icon, name }) => (
+                    <div class="flex items-center text-xl font-medium md:text-2xl">
+                        <Icon
+                            name={icon as keyof typeof icons}
+                            size={32}
+                            color="white"
+                            className="mr-2"
+                        />
+                        {name}
+                    </div>
+                ))
+            }
         </Marquee>
-      </div>
-    </section>
+    </div>
+</section>

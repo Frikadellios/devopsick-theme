@@ -3,7 +3,7 @@ import { defaultLang, languages, ui } from './ui'
 export const LANGUAGES = {
   en: 'English',
   ru: 'Русский',
-  uk: 'Українська',
+  uk: 'Українська'
 }
 
 export type UiType = keyof typeof ui

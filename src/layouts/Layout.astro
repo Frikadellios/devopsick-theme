@@ -1,5 +1,4 @@
 ---
-
 import BaseHead from '@/components/BaseHead.astro'
 import TailwindIndicator from '@/components/tailwind-indicator.astro'
 import { cn } from '../lib/utils'
@@ -17,18 +16,18 @@ const { title, description, mainClass, bodyClass } = Astro.props as Props
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth bg-background text-foreground">
-  <head>
-    <BaseHead title={`${title}`} description={description ?? ''} />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script is:inline src="./assets/vendor/preline/preline.js"></script>
-  </head>
-  <body class={cn("flex flex-col min-h-screen", bodyClass)}>
+<html lang="en" class="bg-background text-foreground scroll-smooth">
+    <head>
+        <BaseHead title={`${title}`} description={description ?? ""} />
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+        ></script>
+        <script is:inline src="./assets/vendor/preline/preline.js"></script>
+    </head>
+    <body class={cn("flex flex-col min-h-screen", bodyClass)}>
         <main class={cn(mainClass)}>
             <slot />
             <TailwindIndicator />
         </main>
-  </body>
+    </body><script src="../../node_modules/preline/preline.js"></script>
 </html>
-
-<script src="../../node_modules/preline/preline.js"></script>

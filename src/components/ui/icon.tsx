@@ -4,7 +4,7 @@ export const Icon = ({
   name,
   color,
   size,
-  className,
+  className
 }: {
   name: keyof typeof icons
   color: string

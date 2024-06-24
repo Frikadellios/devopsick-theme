@@ -25,51 +25,58 @@ const lang = getLangFromUrl(Astro.url)
 ---
 
 <li class="relative">
-  <DropdownContainer class="group">
-    <button
-      class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 transition-colors font-medium duration-200 hover:text-yellow-500 text-gray-950 hover:text-med-yellow ">
-      <span>{title[lang]}</span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="3"
-        stroke="currentColor"
-        class="w-3 h-3 mt-0.5 group-open:rotate-180">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-      </svg>
-    </button>
-    <DropdownItems>
-      <div
-        class:list={[
-          "lg:absolute w-full lg:w-48 z-10",
-          lastItem
-            ? "lg:right-0 origin-top-right"
-            : "lg:left-0 origin-top-left",
-        ]}>
-        <div
-          class="px-3 lg:py-2 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col">
-          {
-            children.map((item: { 
-                path: string,
-                title: {
-                    uk: string
-                    en: string
-                    ru: string 
-                }
-            }) => (
-              <a
-                href={item.path}
-                class="transition-colors font-medium duration-200 hover:text-yellow-500 flex items-center py-2 text-gray-950 hover:text-med-yellow lg:px-3">
-                {item.title[lang]}
-              </a>
-            ))
-          }
-        </div>
-      </div>
-    </DropdownItems>
-  </DropdownContainer>
+    <DropdownContainer class="group">
+        <button
+            class="hover:text-med-yellow flex w-full items-center gap-1 py-2 font-medium text-gray-950 transition-colors duration-200 hover:text-yellow-500 lg:w-auto lg:px-3"
+        >
+            <span>{title[lang]}</span>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3"
+                stroke="currentColor"
+                class="mt-0.5 h-3 w-3 group-open:rotate-180"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+            </svg>
+        </button>
+        <DropdownItems>
+            <div
+                class:list={[
+                    "z-10 w-full lg:absolute lg:w-48",
+                    lastItem
+                        ? "origin-top-right lg:right-0"
+                        : "origin-top-left lg:left-0"
+                ]}
+            >
+                <div
+                    class="flex flex-col px-3 lg:rounded-md lg:border lg:bg-white lg:py-2 lg:shadow"
+                >
+                    {
+                        children.map(
+                            (item: {
+                                path: string;
+                                title: {
+                                    uk: string;
+                                    en: string;
+                                    ru: string;
+                                };
+                            }) => (
+                                <a
+                                    href={item.path}
+                                    class="hover:text-med-yellow flex items-center py-2 font-medium text-gray-950 transition-colors duration-200 hover:text-yellow-500 lg:px-3"
+                                >
+                                    {item.title[lang]}
+                                </a>
+                            )
+                        )
+                    }
+                </div>
+            </div>
+        </DropdownItems>
+    </DropdownContainer>
 </li>

@@ -5,7 +5,7 @@ export type Locale = 'en' | 'ru' | 'uk' | string
 export const LOCALES = {
   en: 'en-GB',
   uk: 'uk-UA',
-  ru: 'ru-UA',
+  ru: 'ru-UA'
 }
 
 interface Fallback {
@@ -20,5 +20,5 @@ export const DEFAULT_LANGUAGE = 'en'
 export const currentLocale = Object.keys(LANGUAGES)[0]
 
 export const fallback: Fallback = {
-  currentLocale: defaultLocale,
+  currentLocale: defaultLocale
 }
