@@ -1,0 +1,37 @@
+.theme-custom {
+    /* Name: custom color palette
+       Author: Ilias Ism
+       URL: https://gradient.page */
+
+    /* CSS: .bg-gradient { background: var(--gradient) } */
+    --gradient: linear-gradient(to top left,#02AAB0,#00CDAC);
+
+    --background: 193 63.699999999999996% 2.8%;
+    --foreground: 193 9.8% 96.75%;
+
+    --muted: 193 49% 10.5%;
+    --muted-foreground: 193 9.8% 53.5%;
+
+    --popover: 193 45.4% 4.55%;
+    --popover-foreground: 193 9.8% 96.75%;
+
+    --card: 193 45.4% 4.55%;
+    --card-foreground: 193 9.8% 96.75%;
+
+    --border: 193 49% 10.5%;
+    --input: 193 49% 10.5%;
+
+    --primary: 193 98% 35%;
+    --primary-foreground: 193 9.8% 96.75%;
+
+    --secondary: 193 49% 10.5%;
+    --secondary-foreground: 193 9.8% 96.75%;
+
+    --accent: 193 49% 10.5%;
+    --accent-foreground: 193 9.8% 96.75%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 193 9.8% 96.75%;
+
+    --ring: 193 98% 35%;
+}
